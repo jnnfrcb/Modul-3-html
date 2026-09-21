@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulir Pendaftaran Ekstrakurikuler</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+
+        <h2>Formulir Pendaftaran Ekstrakurikuler</h2>
+
+        <form id="formEkstrakurikuler">
+
+            <table>
+                <tr>
+                    <td><label for="nama">Nama Lengkap</label></td>
+                    <td>
+                        <input type="text" id="nama" name="nama" placeholder="Masukkan Nama Lengkap" required>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><label for="nis">NIS</label></td>
+                    <td>
+                        <input type="text" id="nis" name="nis" placeholder="Masukkan Nomor Induk Siswa" required>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><label for="kelas">Kelas</label></td>
+                    <td>
+                        <select id="kelas" name="kelas" required>
+                            <option value="">Pilih Kelas</option>
+                            <option value="X">X</option>
+                            <option value="XI">XI</option>
+                            <option value="XII">XII</option>
+                        </select>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><label for="tanggal_lahir">Tanggal Lahir</label></td>
+                    <td>
+                        <input type="text" id="tanggal_lahir" name="tanggal_lahir" placeholder="DD-MM-YYYY"
+                            pattern="[0-9]{2}-[0-9]{2}-[0-9]{4}" required>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Jenis Kelamin</td>
+                    <td>
+                        <label>
+                            <input type="radio" name="jenis_kelamin" value="Laki-laki" required>
+                            Laki-laki
+                        </label>
+
+                        <label>
+                            <input type="radio" name="jenis_kelamin" value="Perempuan">
+                            Perempuan
+                        </label>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Ekstrakurikuler</td>
+                    <td class="ekskul">
+
+                        <label>
+                            <input type="checkbox" name="ekstrakurikuler" value="Pramuka">
+                            Pramuka
+                        </label>
+
+                        <label>
+                            <input type="checkbox" name="ekstrakurikuler" value="PMR">
+                            PMR
+                        </label>
+
+                        <label>
+                            <input type="checkbox" name="ekstrakurikuler" value="KIR">
+                            KIR
+                        </label>
+
+                        <br>
+
+                        <label>
+                            <input type="checkbox" name="ekstrakurikuler" value="Paskibra">
+                            Paskibra
+                        </label>
+
+                        <label>
+                            <input type="checkbox" name="ekstrakurikuler" value="Seni Tari">
+                            Seni Tari
+                        </label>
+
+                        <label>
+                            <input type="checkbox" name="ekstrakurikuler" value="Musik">
+                            Musik
+                        </label>
+
+                        <br>
+
+                        <label>
+                            <input type="checkbox" name="ekstrakurikuler" value="Futsal">
+                            Futsal
+                        </label>
+
+                        <label>
+                            <input type="checkbox" name="ekstrakurikuler" value="Basket">
+                            Basket
+                        </label>
+
+                        <label>
+                            <input type="checkbox" name="ekstrakurikuler" value="English Club">
+                            English Club
+                        </label>
+
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><label for="email">Alamat Email</label></td>
+                    <td>
+                        <input type="email" id="email" name="email" placeholder="contoh@mail.com" required>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><label for="telepon">Nomor Telepon</label></td>
+                    <td>
+                        <input type="tel" id="telepon" name="telepon" placeholder="08xxxxxxxxxx" required>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td colspan="2" class="tombol">
+                        <input type="submit" value="Kirim Data">
+                        <input type="reset" value="Reset Formulir">
+                    </td>
+                </tr>
+            </table>
+
+        </form>
+
+        <div id="hasil"></div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
