@@ -1,0 +1,121 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 30px;
+}
+
+.container {
+    width: 700px;
+    margin: auto;
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #333;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+td {
+    padding: 10px;
+    vertical-align: top;
+}
+
+td:first-child {
+    width: 180px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.ekskul {
+    line-height: 2;
+}
+
+.ekskul label {
+    margin-right: 15px;
+    font-weight: normal;
+}
+
+.tombol {
+    text-align: center;
+    padding-top: 20px;
+}
+
+input[type="submit"],
+input[type="reset"] {
+    padding: 10px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px;
+    font-size: 14px;
+}
+
+input[type="submit"] {
+    background-color: #2e7d32;
+    color: white;
+}
+
+input[type="reset"] {
+    background-color: #757575;
+    color: white;
+}
+
+input[type="submit"]:hover {
+    background-color: #116316;
+}
+
+input[type="reset"]:hover {
+    background-color: #5b5b5b;
+}
+
+#hasil {
+    margin-top: 30px;
+}
+
+#hasil h3 {
+    text-align: center;
+    color: #333;
+}
+
+.tabel-hasil {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+.tabel-hasil th,
+.tabel-hasil td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+}
+
+.tabel-hasil th {
+    background-color: #2e7d32;
+    color: white;
+}
+
+.tabel-hasil td:first-child {
+    width: 180px;
+    font-weight: bold;
+}
